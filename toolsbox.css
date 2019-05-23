@@ -6,48 +6,110 @@
     align-items: center;
 }
 
-.tools-box{
+.tools-box {
     width: 341px;
     height: 570px;
     box-sizing: border-box;
     position: relative;
     overflow: hidden;
 }
+
 .oval-tools {
     position: absolute;
     top: 5%;
     right: 5%;
+    z-index: 10000;
     min-width: 50px;
     min-height: 50px;
     border-radius: 50%;
     background: #c769da;
 }
-.oval-tools-image{
+
+.oval-tools-image {
     width: 28px;
     height: 28px;
     padding: 10%;
     object-fit: contain;
 }
+
 .tools-box-header {
     font-size: 24px;
     font-weight: bold;
     background-color: #f7f9fc;
-    padding: 10px 10px 10px 30px  ;
+    padding: 10px 10px 10px 30px;
     border-bottom: 1px solid #e5e5e5;
 }
-.tools-box-body{
+
+.tools-box-body {
     position: relative;
+    height: 511px;
+    overflow-y: auto;
 }
-.project-tool{
-  width: 103px;
-  height: 16px;
-  padding-left:14px;
-  font-family: Gotham;
-  font-size: 16px;
-  font-weight: normal;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: normal;
-  letter-spacing: normal;
-  color: #4a4a4a;
+
+.project-tool {
+    width: 103px;
+    padding-left: 25px;
+    padding-top: 35.5px;
+    font-family: Gotham;
+    font-size: 15px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    color: #4a4a4a;
+    margin-bottom: 24px;
+}
+
+.rectangle {
+    /* position: absolute; */
+    /* padding-top: 24px; */
+    padding-left: 20px;
+}
+
+.f-left {
+    border-radius: 4px;
+    border: solid 1px #979797;
+    background-color: #ffffff;
+    margin-right: 14px;
+    min-width: 46px;
+    min-height: 52px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.mb-cus {
+    margin-bottom: 14px;
+}
+
+.rectangle-custom {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 300px;
+    overflow-x: auto;
+    height: auto;
+    width: 300px;
+}
+
+.bitmap-image {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.birmap-title {
+    width: 18px;
+    height: 10px;
+    font-family: Gotham;
+    font-size: 10px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: normal;
+    text-align: center;
+    color: #4a4a4a;
 }
